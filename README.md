@@ -31,7 +31,7 @@ L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer le
 - Supports opérationnels : IT et ressources humaines.
 
 ## 📊 Statistiques descriptives
-### Comparaison de l'EBITDA et des Charges Fixes
+### Comparaison de l'EBITDA et des charges fixes hebdomadaires
 
 Période étudiée : **Historique consolidé (2024-2025)**
 
