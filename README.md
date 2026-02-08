@@ -57,6 +57,7 @@ Une analyse de corrélation a été réalisée pour valider la sélection des va
 
 ## 🔍 Analyse des corrélations
 <img width="945" height="793" alt="image" src="https://github.com/user-attachments/assets/998619eb-c479-4f14-a884-0ee822f0a793" />
+
 - On observe une corrélation positive très forte de 0,8922 entre le volume de ventes et l'EBITDA. Cela confirme que le modèle est sensible au volume, mais que la structure de coûts actuelle étouffe ce levier.
 - La matrice confirme que certains coûts, bien que nécessaires, ont un impact négatif marqué sur l'EBITDA lorsqu'ils ne sont pas optimisés.
 - Les faibles corrélations croisées entre les différents postes de dépenses (souvent proches de 0) permettent d'éviter le biais de multicolinéarité, garantissant la fiabilité des coefficients de la régression OLS.
