@@ -94,7 +94,7 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 
 - La distribution des résidus suit une loi normale centrée sur zéro, confirmant la neutralité statistique du modèle et la fiabilité des coefficients utilisés pour le pilotage du plan de redressement.
 
-## Déploiment de la stratégie de redressement
+## 💡 Déploiement de la stratégie de redressement
 
 ### 1️⃣ Levier prioritaire : restauration de la marge
 - Domination du taux de marge : Le coefficient de **+2 671,72** associé au *Gross_Margin_Rate* écrase l’ensemble des autres leviers de performance.
