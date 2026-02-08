@@ -24,7 +24,7 @@ Afin d’assurer une comparabilité parfaite entre les différentes Business Uni
 - Indicateur de survie (point mort) : Calcul du seuil de rentabilité théorique pour chaque branche afin de mesurer l'écart à la rentabilité.
 
 ## 🏗️ Diagnostic de la structure de coûts
-L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer les coûts "efficients" (générateurs de croissance) des coûts "toxiques" (destructeurs de marge).
+L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer les coûts efficients des coûts toxiques.
 - Coûts fixes critiques : Loyer et administration.
 - Coûts variables d'acquisition : Marketing et force de vente.
 - Supports opérationnels : IT et ressources humaines.
