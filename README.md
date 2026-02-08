@@ -94,13 +94,15 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 
 - La distribution des résidus suit une loi normale centrée sur zéro, confirmant la neutralité statistique du modèle et la fiabilité des coefficients utilisés pour le pilotage du plan de redressement.
 
+## Déploiment de la stratégie de redressement
+
 ### 1️⃣ Levier prioritaire : restauration de la marge
 - Domination du taux de marge : Le coefficient de **+2 671,72** associé au *Gross_Margin_Rate* écrase l’ensemble des autres leviers de performance.
   Impact massif : Une amélioration de seulement **+0,5 point de marge brute** génère autant d’EBITDA que la **suppression totale du budget marketing** (données hebdomadaires).
 
 Des axes de redressement pourraient passer par :
-    - une **renégociation agressive des coûts d’achat**.
-    - une **optimisation du mix produit / pricing**.
+- une **renégociation agressive des coûts d’achat**.
+- une **optimisation du mix produit / pricing**.
 
 Point important : Une entreprise avec un déficit chronique de l'EBITDA tend à avoir épuisé un certain nombre de marges de manoeuvres, de plus, une modification du mix produit / pricing peut etre longue et risquée à réalisée.
 
