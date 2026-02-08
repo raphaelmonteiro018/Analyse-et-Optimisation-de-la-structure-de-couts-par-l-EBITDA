@@ -24,9 +24,8 @@ Ce projet vise à diagnostiquer la viabilité financière d'un réseau de busine
 - Excel : Automatisation du reporting et génération des mémos de redressement.
 
 ## 📁 Contenu du projet
-- Etape 1 : Analyse descriptive - Mise en évidence de l'insolvabilité de la structure actuelle.
-- Etape 2 : Modélisation MLR - Calcul des coefficients d'impact et identification des départements critiques.
-- Etape 3 : Simulation de redressement - Projection de l'EBITDA après activation des leviers d'optimisation.
+- Etape 1 : Analyse descriptive & Modélisation MLR
+- Etape 2 : Simulation de redressement - Projection de l'EBITDA après activation des leviers d'optimisation.
 
 ## Navigation
 Pour naviguer entre les différentes étapes du processus, veuillez sélectionner les scripts dans l'ordre suivant :
