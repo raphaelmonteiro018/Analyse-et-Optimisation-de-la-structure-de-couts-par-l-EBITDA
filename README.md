@@ -59,24 +59,6 @@ Le déficit médian par rapport au point mort consolidé est de **4 362 €**.
 - Ce chiffre confirme que la structure actuelle ne peut pas atteindre l'équilibre simplement par une croissance organique des ventes.
 - Une **réduction drastique des charges fixes** est mathématiquement indispensable avant d'envisager tout levier de croissance.
 
-## 🔍 Analyse de corrélation préliminaire A VOIR SI JE GARDE OU NON
-
-Cette étape permet de valider la pertinence des facteurs retenus avant la régression.
-
-### 📊 Matrice de corrélation (Variables Clés)
-
-| Variables | EBITDA | Sales | Cost_Rent | Cost_Sales | Cost_Mkt |
-| --- | --- | --- | --- | --- | --- |
-| **EBITDA** | 1 | 0,32 | -0,88 | -0,91 | -0,75 |
-| **Sales** | 0,32 | 1 | 0,05 | 0,12 | 0,45 |
-| **Cost_Rent** | -0,88 | 0,05 | 1 | 0,10 | 0,08 |
-| **Cost_Sales** | -0,91 | 0,12 | 0,10 | 1 | 0,15 |
-
-### 🧠 Enseignements
-- Forte corrélation négative : Le loyer et la force de vente sont les deux variables les plus corrélées à la dégradation de l'EBITDA (r < -0.85).
-- Faible impact des ventes : La corrélation entre les ventes et l'EBITDA est trop faible (0.32), ce qui suggère que chaque euro de CA supplémentaire est "mangé" par des coûts variables trop élevés.
-- Validation du modèle : L'absence de colinéarité excessive entre les départements permet de passer à une régression multiple robuste.
-
 ## ⚖️ Modélisation Économétrique
 
 Une régression linéaire multiple par la méthode des moindres carrés ordinaires (OLS) a été déployée afin de quantifier l’impact marginal de chaque poste de dépense sur l’EBITDA.
