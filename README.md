@@ -25,7 +25,7 @@ Ce projet vise à diagnostiquer la viabilité financière d'un réseau de busine
 
 ## 📁 Contenu du projet
 - Etape 1 : Analyse descriptive & Modélisation
-- Etape 2 : Simulation de redressement - Projection de l'EBITDA après activation des leviers d'optimisation.
+- Etape 2 : Choix des leviers & Simulation du redressement
 
 ## Navigation
 Pour naviguer entre les différentes étapes du processus, veuillez sélectionner les scripts dans l'ordre suivant :
