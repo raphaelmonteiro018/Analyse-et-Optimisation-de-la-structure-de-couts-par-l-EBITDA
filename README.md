@@ -44,7 +44,7 @@ Période étudiée : **Historique consolidé (2024-2025)**
 | **Maximum** | -1 333,89 € | 716,85 € | 820,22 € |
 ------------------------------------------------------------------
 <img width="1524" height="834" alt="image" src="https://github.com/user-attachments/assets/66202d06-609a-4349-91af-fbeb3238d80e" />
-------------------------------------------------------------------
+
 <img width="1611" height="943" alt="image" src="https://github.com/user-attachments/assets/57e299af-fe22-462b-a674-730d431a0301" />
 
 ### 💡 Lecture :
