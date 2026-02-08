@@ -1,32 +1,32 @@
-## 🏢 Contexte
-Ce projet vise à diagnostiquer la viabilité financière d'un réseau de business units en difficulté chronique. L'objectif est de transformer des données comptables brutes en un moteur de décision capable d'identifier les centres de coûts toxiques et de simuler une trajectoire de redressement vers l'équilibre (EBITDA).
+## 📈 Simulation du plan de redressement
+L’objectif est d’identifier le seuil de rentabilité (*break-even point*) en activant simultanément deux leviers : la structure de coûts et la valeur intrinsèque du modèle économique.
 
-## 🎯 Objectifs
-- Isoler les leviers de perte : Identifier mathématiquement quels départements (loyer, marketing, RH, etc.) détruisent la rentabilité opérationnelle.
-- Réduire le risque de faillite : Simuler une restructuration chirurgicale pour abaisser le point mort financier sans stopper l'activité.
-- Auditer la structure de coûts : Proposer une méthodologie économétrique (Régression OLS) permettant de justifier chaque coupe budgétaire par son impact réel sur l'EBITDA.
-- Industrialiser le reporting : Automatiser le flux de données entre l'extraction P&L, l'analyse Python et la génération de feuilles de route opérationnelles sous Excel.
+### 🛠️ Stratégie
+Pour sortir du déficit chronique (moyenne groupe de **-1 487 € / semaine**), le plan repose sur un arbitrage différencié des ressources, directement fondé sur les coefficients issus du modèle économétrique.
 
-## 🚀 Résultats
-- Réduction du point mort : -37% de chiffre d'affaires nécessaire pour atteindre l'équilibre financier grâce à l'optimisation des charges fixes.
-- Fiabilité du modèle : 98.2% (R-squared). La variation de l'EBITDA est expliquée quasiment intégralement par les variables de coûts et de revenus identifiées.
-- Optimisation de l'EBITDA : Amélioration de la performance de **+65% en moyenne**, ramenant le déficit de -1487 € à -520 € par semaine et par business unit.
-- Aide à la décision stratégique : Mise en évidence du "plafond de verre" du business model actuel, prouvant la nécessité d'un pivot stratégique malgré une gestion optimisée.
+#### 1️⃣ Choc opérationnel différencié (coupes budgétaires)
+Contrairement à une coupe linéaire, l’effort est proportionnel au niveau d’inefficience mesuré :
+- Postes toxiques (-25 %) : Loyer (Cost_Rent) et force de vente (Cost_Sales). Les coefficients indiquent une destruction nette de valeur.
+- Postes neutres (-15 %) : Marketing et administration. Réduction ciblée visant à contenir la dérive des coûts sans interrompre l’activité.
+- Postes efficients (-10 %) : IT (Cost_IT). Identifié comme levier de productivité, l’IT est préservé au maximum afin de maintenir la capacité opérationnelle et digitale.
 
-## 🔁 Workflow
-1. ETL & Préparation : Consolidation des flux P&L et transformation des données pour créer un dataset exploitable par branche et par semaine.
-2. Diagnostic descriptif : Analyse de la dispersion et calcul de la marge de sécurité par rapport au point mort théorique.
-3. Moteur économétrique : Déploiement d'une régression linéaire multiple pour quantifier la toxicité des coûts.
-4. Stress-test & Prescription : Simulation d'une structure "lean" et export automatisé des plans d'action correctifs par région.
+#### 2️⃣ Choc de valeur (sourcing & pricing)
+- Objectif : **+0,50 point de marge brute**
 
-## 🏗️ Outils utilisés
-- Python : Pandas, NumPy, Statsmodels, Seaborn, Matplotlib.
-- Excel : Automatisation du reporting et génération des mémos de redressement.
+Justification : Dans une structure où le levier chiffre d’affaires est faible, la création de valeur repose prioritairement sur la **marge**. Un gain de 0,5 point constitue une hypothèse réaliste via la centralisation des achats, l’optimisation logistique ou un repositionnement prix sur les segments à forte contribution.
 
-## 📁 Contenu du projet
-- Etape 1 : Analyse descriptive & Modélisation
-- Etape 2 : Choix des leviers & Simulation du redressement
+### 📊 Résultats de la simulation
+L’application de ce scénario permet de basculer l’ensemble des Business Units en territoire positif.
 
-## Navigation
-Pour naviguer entre les différentes étapes du processus, veuillez sélectionner les scripts dans l'ordre suivant :
-<img width="1852" height="542" alt="image" src="https://github.com/user-attachments/assets/4caed3ab-4151-4916-a118-1ca66b3adceb" />
+| Branche   | EBITDA initial | **EBITDA projeté** | Statut        | Gain de valeur |
+|----------|----------------|--------------------|---------------|---------------|
+| **East-01**  | -1 524 € | **+355,51 €** | 🟢 Rentable | +1 335,86 € |
+| **North-01** | -1 637 € | **+291,71 €** | 🟢 Rentable | +1 335,86 € |
+| **South-01** | -1 333 € | **+553,42 €** | 🟢 Rentable | +1 335,86 € |
+| **West-01**  | -1 453 € | **+453,12 €** | 🟢 Rentable | +1 335,86 € |
+
+### 🧠 Conclusion
+Cette modélisation met en évidence que :
+- L’austérité seule ne suffit pas : Même des coupes budgétaires de 25 % ne permettent pas un retour durable à l’équilibre sans amélioration de la marge.
+- La marge est le driver maître : Le coefficient de **2 671,72** issu de la régression Omontre qu’un point de marge supplémentaire a un impact largement supérieur à la croissance du volume de ventes.
+- Décision stratégique clé : Le redressement impose un pivot managérial, passer d’une logique de **volume** à une logique de **valeur et de sourcing**.
