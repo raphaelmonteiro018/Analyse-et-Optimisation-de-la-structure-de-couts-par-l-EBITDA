@@ -24,7 +24,7 @@ Afin d’assurer une comparabilité parfaite entre les différentes Business Uni
 - Indicateur de survie (point mort) : Calcul du seuil de rentabilité théorique pour chaque branche afin de mesurer l'écart à la rentabilité.
 - Feature engineering : Création de ratios d'efficacité commerciale (CA généré par euro de salaire) pour auditer la productivité de la force de vente.
 
-## 🏗️ Diagnostic de la Structure de Coûts
+## 🏗️ Diagnostic de la structure de coûts
 L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer les coûts "efficients" (générateurs de croissance) des coûts "toxiques" (destructeurs de marge).
 - Coûts fixes critiques : Loyer et administration.
 - Coûts variables d'acquisition : Marketing et force de vente.
@@ -53,7 +53,7 @@ Période étudiée : **Historique consolidé (2024-2025)**
 - Poids de l'immobilier : Le loyer moyen représente une charge fixe disproportionnée, avec un pic critique à **716,85 €** sur la branche North-01 (voir graphique de structure des OPEX).
 - Inefficience commerciale : La force de vente est le premier poste de dépense global, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
 
-## 📐 Interprétation du Point Mort
+## 📐 Interprétation du point mort
 Le déficit médian par rapport au point mort consolidé est de **4 362 €**.
 
 - Ce chiffre confirme que la structure actuelle ne peut pas atteindre l'équilibre simplement par une croissance organique des ventes.
@@ -61,18 +61,22 @@ Le déficit médian par rapport au point mort consolidé est de **4 362 €**.
 
 ## ⚖️ Modélisation Économétrique
 
-Une régression linéaire multiple par la méthode des moindres carrés ordinaires (OLS) a été déployée afin de quantifier l’impact marginal de chaque poste de dépense sur l’EBITDA.
+Une analyse de corrélation a été réalisée pour valider la sélection des variables et identifier les moteurs de perte, puis, une régression linéaire multiple par la méthode des moindres carrés ordinaires (OLS) a été déployée afin de quantifier l’impact marginal de chaque poste de dépense sur l’EBITDA.
 
-## 📊 Performance du Modèle
+## 🔍 Analyse des corrélations
+<img width="945" height="793" alt="image" src="https://github.com/user-attachments/assets/998619eb-c479-4f14-a884-0ee822f0a793" />
+> - On observe une corrélation positive très forte de 0,8922 entre le volume de ventes et l'EBITDA. Cela confirme que le modèle est sensible au volume, mais que la structure de coûts actuelle "étouffe" ce levier.
+- La matrice confirme que certains coûts, bien que nécessaires, ont un impact négatif marqué sur l'EBITDA lorsqu'ils ne sont pas optimisés.
+- Les faibles corrélations croisées entre les différents postes de dépenses (souvent proches de 0) permettent d'éviter le biais de multicolinéarité, garantissant la fiabilité des coefficients de la régression OLS.
+
+## 📊 Performance du modèle
 - Coefficient de détermination ($R^2$) : 0,982  
   Le modèle explique **98,2 % des variations de l’EBITDA**, garantissant une fiabilité extrême pour les simulations de redressement.
-  
 - Significativité globale (Prob F-stat) : $1,44 \times 10^{-321}$  
   La probabilité que les relations observées soient dues au hasard est quasi nulle.
-
 - Indice de confiance : Toutes les variables présentent une **P-value ≈ 0,000**, confirmant leur pertinence statistique individuelle.
 
-## 🔍 Analyse des Coefficients ($\beta$)
+## 🔍 Analyse des coefficients ($\beta$)
 L’équation de régression permet d’isoler la toxicité ou l’efficience de chaque euro engagé :
 
 | Variable | Coefficient | Nature de l’impact | Diagnostic stratégique |
@@ -88,10 +92,8 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 ## 🧠 Enseignements Stratégiques
 - Priorisation des coupes : Les départements dont le coefficient est supérieur à $|1,0|$ (**Rent** et **Sales Force**) sont les cibles prioritaires.
   Chaque euro économisé dans ces pôles améliore l’EBITDA de **plus d’un euro**, traduisant un fort effet de levier sur les coûts fixes.
-
 - Seuil d’efficience IT : 1vec un coefficient de **-0,90**, l’IT est le département le plus efficient en coût support.  
   Une réduction budgétaire aurait un impact négatif disproportionné sur l’EBITDA.
-
 - Faiblesse du levier CA : Le coefficient des ventes (**0,38**) confirme que la croissance du chiffre d’affaires seule ne permet pas de redresser la structure sans une révision profonde de la base de coûts.
 
 ## ➡️ Prochaine étape
