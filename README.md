@@ -1,4 +1,4 @@
-# 📈 Analyse Descriptive & Modélisation
+# 📈 Analyse descriptive & Modélisation
 
 ## 🎯 Objectifs
 - Poser un cadre analytique rigoureux avant toute simulation de redressement.
@@ -43,10 +43,15 @@ Période étudiée : **Historique consolidé (2024-2025)**
 | **Médiane** | **-1 488,90 €** | 607,04 € | 767,27 € |
 | **Maximum** | -1 333,89 € | 716,85 € | 820,22 € |
 
+<img width="1247" height="823" alt="image" src="https://github.com/user-attachments/assets/ad300750-be5f-485a-ac30-278df9255a3d" />
+
+<img width="1494" height="944" alt="image" src="https://github.com/user-attachments/assets/aeb06ab7-21cd-4a4e-9e81-357360ea72db" />
+
 ### 💡 Lecture :
-- Insolvabilité structurelle : L'EBITDA moyen est négatif sur 100% des Business Units examinées.
-- Poids de l'immobilier : Le loyer moyen représente une charge fixe disproportionnée, avec un pic critique à **716,85 €** sur la branche North-01.
-- Inefficience commerciale : La force de vente est le premier poste de dépense, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
+- Insolvabilité structurelle : L'EBITDA moyen est négatif sur 100% des Business Units examinées. La médiane de chaque boîte (ligne centrale dans les boîtes) se situe systématiquement sous le seuil de rentabilité de 0 €.
+- Analyse des performances atypiques (outliers) : Les points isolés au-dessus de 0 € (notamment sur East-01 et West-01) prouvent que la rentabilité est atteignable ponctuellement, mais qu'elle est étouffée par la rigidité des charges fixes le reste du temps.
+- Poids de l'immobilier : Le loyer moyen représente une charge fixe disproportionnée, avec un pic critique à **716,85 €** sur la branche North-01 (voir graphique de structure des OPEX).
+- Inefficience commerciale : La force de vente est le premier poste de dépense global, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
 
 ## 📐 Interprétation du Point Mort
 Le déficit médian par rapport au point mort est de **4 362 €**.
