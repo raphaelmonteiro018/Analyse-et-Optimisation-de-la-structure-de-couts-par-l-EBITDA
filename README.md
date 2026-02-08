@@ -95,7 +95,7 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 - Faiblesse du levier CA : Le coefficient des ventes (**0,38**) confirme que la croissance du chiffre d’affaires seule ne permet pas de redresser la structure sans une révision profonde de la base de coûts.
 
 ## ➡️ Prochaine étape
-👉 **Simulation de Redressement Ciblé**
+👉 **Simulation de redressement ciblé**
 - Activation des leviers sur les pôles à forte toxicité.
 - Projection de l’EBITDA cible post-optimisation.
 - Recalcul du point mort et évaluation de la viabilité long terme.
