@@ -31,7 +31,7 @@ L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer le
 - Supports opérationnels : IT et ressources humaines.
 
 ## 📊 Statistiques descriptives
-### Comparaison de l'EBITDA et des charges fixes hebdomadaires par région
+### Comparaison de l'EBITDA et des charges fixes hebdomadaires par business unit
 
 Période étudiée : **Historique consolidé (2024-2025)**
 
@@ -42,13 +42,13 @@ Période étudiée : **Historique consolidé (2024-2025)**
 | **Minimum** | -1 637,05 € | 581,97 € | 739,83 € |
 | **Médiane** | **-1 488,90 €** | 607,04 € | 767,27 € |
 | **Maximum** | -1 333,89 € | 716,85 € | 820,22 € |
-
-<img width="1247" height="823" alt="image" src="https://github.com/user-attachments/assets/ad300750-be5f-485a-ac30-278df9255a3d" />
-
-<img width="1494" height="944" alt="image" src="https://github.com/user-attachments/assets/aeb06ab7-21cd-4a4e-9e81-357360ea72db" />
+------------------------------------------------------------------
+<img width="1524" height="834" alt="image" src="https://github.com/user-attachments/assets/66202d06-609a-4349-91af-fbeb3238d80e" />
+------------------------------------------------------------------
+<img width="1611" height="943" alt="image" src="https://github.com/user-attachments/assets/57e299af-fe22-462b-a674-730d431a0301" />
 
 ### 💡 Lecture :
-- Insolvabilité structurelle : L'EBITDA moyen est négatif sur 100% des Business Units examinées. La médiane de chaque boîte (ligne centrale dans les boîtes) se situe systématiquement sous le seuil de rentabilité de 0 €.
+- Insolvabilité structurelle : L'EBITDA moyen est négatif sur 100% des business units examinées. La médiane de chaque boîte (ligne centrale dans les boîtes) se situe systématiquement sous le seuil de rentabilité de 0 €.
 - Analyse des performances atypiques (outliers) : Les points isolés au-dessus de 0 € (notamment sur East-01 et West-01) prouvent que la rentabilité est atteignable ponctuellement, mais qu'elle est étouffée par la rigidité des charges fixes le reste du temps.
 - Poids de l'immobilier : Le loyer moyen représente une charge fixe disproportionnée, avec un pic critique à **716,85 €** sur la branche North-01 (voir graphique de structure des OPEX).
 - Inefficience commerciale : La force de vente est le premier poste de dépense global, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
