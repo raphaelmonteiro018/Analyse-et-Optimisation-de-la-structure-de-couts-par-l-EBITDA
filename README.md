@@ -53,14 +53,7 @@ Période étudiée : **Historique consolidé (2024-2025)**
 - Poids de l'immobilier : Le loyer moyen représente une charge fixe disproportionnée, avec un pic critique à **716,85 €** sur la branche North-01 (voir graphique de structure des OPEX).
 - Inefficience commerciale : La force de vente est le premier poste de dépense global, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
 
-## 📐 Interprétation du point mort
-Le déficit médian par rapport au point mort consolidé est de **4 362 €**.
-
-- Ce chiffre confirme que la structure actuelle ne peut pas atteindre l'équilibre simplement par une croissance organique des ventes.
-- Une **réduction drastique des charges fixes** est mathématiquement indispensable avant d'envisager tout levier de croissance.
-
 ## ⚖️ Modélisation Économétrique
-
 Une analyse de corrélation a été réalisée pour valider la sélection des variables et identifier les moteurs de perte, puis, une régression linéaire multiple par la méthode des moindres carrés ordinaires (OLS) a été déployée afin de quantifier l’impact marginal de chaque poste de dépense sur l’EBITDA.
 
 ## 🔍 Analyse des corrélations
@@ -90,21 +83,42 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 | **Cost_Sales** | **-1,0406** | Toxique | Sureffectif ou inefficacité structurelle de la force de vente. |
 | **Cost_Rent** | **-1,0546** | Toxique | Loyer surévalué par rapport à la capacité de génération de cash. |
 
-### Test de fiabilité des prévisions
-<img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
---------------------------------------------------------------------------
-
-## 🧠 Enseignements Stratégiques
+- Levier massif (gross margin) : Une amélioration de 1 % du taux de marge brute génère un impact positif sur l'EBITDA de +2 671,72€ confirmant que la rentabilité se joue sur le pricing et les coûts d'achat plutôt que sur la seule croissance du volume de ventes.
 - Priorisation des coupes : Les départements dont le coefficient est supérieur à $|1,0|$ (**Rent** et **Sales Force**) sont les cibles prioritaires.
   Chaque euro économisé dans ces pôles améliore l’EBITDA de **plus d’un euro**, traduisant un fort effet de levier sur les coûts fixes.
 - Seuil d’efficience IT : 1vec un coefficient de **-0,90**, l’IT est le département le plus efficient en coût support.  
   Une réduction budgétaire aurait un impact négatif disproportionné sur l’EBITDA.
 - Faiblesse du levier CA : Le coefficient des ventes (**0,38**) confirme que la croissance du chiffre d’affaires seule ne permet pas de redresser la structure sans une révision profonde de la base de coûts.
 
-## ➡️ Prochaine étape
-👉 **Simulation de redressement ciblé**
-- Activation des leviers sur les pôles à forte toxicité.
-- Projection de l’EBITDA cible post-optimisation.
-- Recalcul du point mort et évaluation de la viabilité long terme.
+### 🛡️ Validation de la robustesse du modèle
+<img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
+--------------------------------------------------------------------------
+La distribution des résidus suit une loi normale centrée sur zéro, confirmant la neutralité statistique du modèle et la fiabilité des coefficients utilisés pour le pilotage du plan de redressement.
 
+## 🧠 Enseignements Stratégiques : le pivot décisionnel
+L’analyse économétrique permet de passer d’une intuition de « crise de croissance » à un diagnostic clair de défaillance structurelle de la création de valeur.
 
+### 1️⃣ Levier prioritaire : restauration de la marge
+- Domination du taux de marge : Le coefficient de **+2 671,72** associé au *Gross_Margin_Rate* écrase l’ensemble des autres leviers de performance.
+  Impact massif : Une amélioration de seulement **+0,5 point de marge brute** génère autant d’EBITDA que la **suppression totale du budget marketing** (données hebdomadaires).
+
+Le redressement ne passera pas par le volume des ventes, mais par :
+    - une **renégociation agressive des coûts d’achat**.
+    - une **optimisation du mix produit / pricing**.
+
+Point important : Une entreprise avec un déficit chronique de l'EBITDA tend à avoir épuisé un certain nombre de marges de manoeuvres, de plus, une modification du mix produit / pricing peut etre longue et risquée à réalisée.
+
+### 2️⃣ Assainissement de la structure
+- Élimination des couts superflus : Les postes loyer (*Cost_Rent*) et force de vente (*Cost_Sales*) sont classés comme toxiques, avec des coefficients respectifs de **-1,05** et **-1,04**. Cela signifie que chaque euro supplémentaire dépensé sur ces postes pèse légèrement plus que ce qu'il ne rapporte sur l'EBITDA (inefficience du capital).
+- Effet de levier inversé : Inversement, chaque euro économisé sur ces postes surévalués ou inefficaces **augmente l’EBITDA de plus d’un euro**, traduisant un levier puissant sur les coûts fixes.
+- Préservation de l’IT : Avec un coefficient de **-0,89**, l’IT apparaît comme le **coût support le plus efficient**. Toute coupe budgétaire sur ce périmètre serait contre-productive et dégraderait l'EBITDA en plus de la capacité opérationnelle.
+
+### 3️⃣ Le mythe de la croissance organique
+- Faiblesse du levier chiffre d’affaires : Le coefficient des ventes (**+0,38**) constitue un **signal d’alerte majeur**. Dans la structure actuelle, injecter de la croissance sans refondre la base de coûts revient à remplir un seau percé car 62 % de chaque euro de chiffre d’affaires supplémentaire est immédiatement absorbé par l’inefficience du modèle.
+
+## ➡️ Prochaine étape : simulation du plan de redressement
+Le plan d’action simulé reposera sur un double choc :
+- Choc opérationnel : réduction de **15 %** des coûts fixes toxiques (Loyer / Force de vente).
+- Choc de valeur : simulation d’un **gain de +0,25 point de marge brute** via la renégociation fournisseurs.
+
+Note : Malgré la complexité pour une entreprise à dégager des points de marges supplémentaires, notamment lorsque celle-ci est déjà en difficulté, j'ai néanmoins choisi de simuler un gain mineur lié au sourcing des articles vendus.
