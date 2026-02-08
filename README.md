@@ -86,7 +86,7 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 - Levier massif (gross margin) : Une amélioration de 1 % du taux de marge brute génère un impact positif sur l'EBITDA de +2 671,72€ confirmant que la rentabilité se joue sur le pricing et les coûts d'achat plutôt que sur la seule croissance du volume de ventes.
 - Priorisation des coupes : Les départements dont le coefficient est supérieur à $|1,0|$ (**Rent** et **Sales Force**) sont les cibles prioritaires.
   Chaque euro économisé dans ces pôles améliore l’EBITDA de **plus d’un euro**, traduisant un fort effet de levier sur les coûts fixes.
-- Seuil d’efficience IT : 1vec un coefficient de **-0,90**, l’IT est le département le plus efficient en coût support.  
+- Seuil d’efficience IT : Avec un coefficient de **-0,90**, l’IT est le département le plus efficient en coût support.  
   Une réduction budgétaire aurait un impact négatif disproportionné sur l’EBITDA.
 - Faiblesse du levier CA : Le coefficient des ventes (**0,38**) confirme que la croissance du chiffre d’affaires seule ne permet pas de redresser la structure sans une révision profonde de la base de coûts.
 
@@ -121,4 +121,4 @@ Le plan d’action simulé reposera sur un double choc :
 - Choc opérationnel : réduction de **15 %** des coûts fixes toxiques (Loyer / Force de vente).
 - Choc de valeur : simulation d’un **gain de +0,25 point de marge brute** via la renégociation fournisseurs.
 
-Note : Malgré la complexité pour une entreprise à dégager des points de marges supplémentaires, notamment lorsque celle-ci est déjà en difficulté, j'ai néanmoins choisi de simuler un gain mineur lié au sourcing des articles vendus.
+Note : Le choix d'un gain de +0,25 point est une hypothèse conservatrice visant à tester la sensibilité du modèle plutôt qu'à parier sur une révolution commerciale immédiate.
