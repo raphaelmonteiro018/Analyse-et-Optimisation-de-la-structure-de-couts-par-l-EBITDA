@@ -59,7 +59,7 @@ Le déficit médian par rapport au point mort consolidé est de **4 362 €**.
 - Ce chiffre confirme que la structure actuelle ne peut pas atteindre l'équilibre simplement par une croissance organique des ventes.
 - Une **réduction drastique des charges fixes** est mathématiquement indispensable avant d'envisager tout levier de croissance.
 
-## 🔍 Analyse de corrélation préliminaire
+## 🔍 Analyse de corrélation préliminaire A VOIR SI JE GARDE OU NON
 
 Cette étape permet de valider la pertinence des facteurs retenus avant la régression.
 
