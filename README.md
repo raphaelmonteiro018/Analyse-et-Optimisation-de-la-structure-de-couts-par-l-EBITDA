@@ -54,7 +54,7 @@ Période étudiée : **Historique consolidé (2024-2025)**
 - Inefficience commerciale : La force de vente est le premier poste de dépense global, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
 
 ## 📐 Interprétation du Point Mort
-Le déficit médian par rapport au point mort est de **4 362 €**.
+Le déficit médian par rapport au point mort consolidé est de **4 362 €**.
 
 - Ce chiffre confirme que la structure actuelle ne peut pas atteindre l'équilibre simplement par une croissance organique des ventes.
 - Une **réduction drastique des charges fixes** est mathématiquement indispensable avant d'envisager tout levier de croissance.
