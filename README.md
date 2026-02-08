@@ -10,8 +10,8 @@
 ## 🔗 Sources des données
 Les données proviennent d'un dataset fictif récupéré pour l'exercice :
 - P&L opérationnel : Détail des revenus et charges par business Unit (East, North, South, West).
-- Référentiel coûts : Ventilation par centres de profit (marketing, RH, IT, loyer, admin, force de vente).
-- Data temporelle : Historique journalier des ventes et budgets mensuels par région et par postes de dépenses.
+- Référentiel coûts : Ventilation par poste de dépense (marketing, RH, IT, loyer, admin, force de vente).
+- Temporalité des données : Historique journalier pour les ventes et mensuel pour les budgets par région/poste de dépense.
 
 ## 🗓️ Harmonisation & Préparation
 Afin d’assurer une comparabilité parfaite entre les différentes Business Units :
