@@ -8,10 +8,10 @@ Ce projet vise à diagnostiquer la viabilité financière d'un réseau de busine
 - Industrialiser le reporting : Automatiser le flux de données entre l'extraction P&L, l'analyse Python et la génération de feuilles de route opérationnelles sous Excel.
 
 ## 🚀 Résultats
-- Réduction du point mort : -37% de chiffre d'affaires nécessaire pour atteindre l'équilibre financier grâce à l'optimisation des charges fixes.
-- Fiabilité du modèle : 98.2% (R-squared). La variation de l'EBITDA est expliquée quasiment intégralement par les variables de coûts et de revenus identifiées.
-- Optimisation de l'EBITDA : Amélioration de la performance de **+65% en moyenne**, ramenant le déficit de -1487 € à -520 € par semaine et par business unit.
-- Aide à la décision stratégique : Mise en évidence du "plafond de verre" du business model actuel, prouvant la nécessité d'un pivot stratégique malgré une gestion optimisée.
+- Restauration de la rentabilité : Passage d'un déficit chronique (-1 487 €) à un profit opérationnel moyen de +413 € par semaine, validant la survie du réseau.
+- Fiabilité du modèle : 98.2% ($R^2$). La variation de l'EBITDA est expliquée quasi intégralement, garantissant des simulations de redressement mathématiquement robustes.
+- Identification des leviers toxiques : Mise en évidence d'un effet de levier inversé sur le loyer et la force de vente (coefficients $> |1.0|$), justifiant des coupes drastiques de -25%.
+- Pivot vers la valeur : Démonstration qu'un gain de +0.5pt de marge brute via le sourcing est 2,5x plus puissant que la seule réduction des coûts fixes.
 
 ## 🔁 Workflow
 1. ETL & Préparation : Consolidation des flux P&L et transformation des données pour créer un dataset exploitable par branche et par semaine.
