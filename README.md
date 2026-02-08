@@ -115,8 +115,3 @@ Point important : Une entreprise avec un déficit chronique de l'EBITDA tend à 
 - Faiblesse du levier chiffre d’affaires : Le coefficient des ventes (**+0,38**) constitue un **signal d’alerte majeur**. Dans la structure actuelle, injecter de la croissance sans refondre la base de coûts revient à remplir un seau percé car 62 % de chaque euro de chiffre d’affaires supplémentaire est immédiatement absorbé par l’inefficience du modèle.
 
 ## ➡️ Prochaine étape : simulation du plan de redressement
-Le plan d’action simulé reposera sur un double choc :
-- Choc opérationnel : réduction de **15 %** des coûts fixes toxiques (Loyer / Force de vente).
-- Choc de valeur : simulation d’un **gain de +0,25 point de marge brute** via la renégociation fournisseurs.
-
-Note : Le choix d'un gain de +0,25 point est une hypothèse conservatrice visant à tester la sensibilité du modèle plutôt qu'à parier sur une révolution commerciale immédiate.
