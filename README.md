@@ -92,7 +92,6 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 
 ### 🛡️ Validation de la robustesse du modèle
 <img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
---------------------------------------------------------------------------
 La distribution des résidus suit une loi normale centrée sur zéro, confirmant la neutralité statistique du modèle et la fiabilité des coefficients utilisés pour le pilotage du plan de redressement.
 
 ## 🧠 Enseignements Stratégiques : le pivot décisionnel
@@ -102,7 +101,7 @@ L’analyse économétrique permet de passer d’une intuition de « crise de cr
 - Domination du taux de marge : Le coefficient de **+2 671,72** associé au *Gross_Margin_Rate* écrase l’ensemble des autres leviers de performance.
   Impact massif : Une amélioration de seulement **+0,5 point de marge brute** génère autant d’EBITDA que la **suppression totale du budget marketing** (données hebdomadaires).
 
-Le redressement ne passera pas par le volume des ventes, mais par :
+Des axes de redressement pourraient passer par :
     - une **renégociation agressive des coûts d’achat**.
     - une **optimisation du mix produit / pricing**.
 
