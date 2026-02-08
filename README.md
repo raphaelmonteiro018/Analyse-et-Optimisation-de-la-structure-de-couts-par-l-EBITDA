@@ -22,7 +22,6 @@ Afin d’assurer une comparabilité parfaite entre les différentes Business Uni
 ## ⚙️ Ingénierie des données & Variable cible (Y)
 - Variable cible (Y) : L'EBITDA hebdomadaire est retenu comme l'indicateur maître de la performance.
 - Indicateur de survie (point mort) : Calcul du seuil de rentabilité théorique pour chaque branche afin de mesurer l'écart à la rentabilité.
-- Feature engineering : Création de ratios d'efficacité commerciale (CA généré par euro de salaire) pour auditer la productivité de la force de vente.
 
 ## 🏗️ Diagnostic de la structure de coûts
 L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer les coûts "efficients" (générateurs de croissance) des coûts "toxiques" (destructeurs de marge).
