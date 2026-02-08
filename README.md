@@ -77,6 +77,45 @@ Cette étape permet de valider la pertinence des facteurs retenus avant la régr
 - Faible impact des ventes : La corrélation entre les ventes et l'EBITDA est trop faible (0.32), ce qui suggère que chaque euro de CA supplémentaire est "mangé" par des coûts variables trop élevés.
 - Validation du modèle : L'absence de colinéarité excessive entre les départements permet de passer à une régression multiple robuste.
 
-## 
+## ⚖️ Modélisation Économétrique
+
+Une régression linéaire multiple par la méthode des moindres carrés ordinaires (OLS) a été déployée afin de quantifier l’impact marginal de chaque poste de dépense sur l’EBITDA.
+
+## 📊 Performance du Modèle
+- Coefficient de détermination ($R^2$) : 0,982  
+  Le modèle explique **98,2 % des variations de l’EBITDA**, garantissant une fiabilité extrême pour les simulations de redressement.
+  
+- Significativité globale (Prob F-stat) : $1,44 \times 10^{-321}$  
+  La probabilité que les relations observées soient dues au hasard est quasi nulle.
+
+- Indice de confiance : Toutes les variables présentent une **P-value ≈ 0,000**, confirmant leur pertinence statistique individuelle.
+
+## 🔍 Analyse des Coefficients ($\beta$)
+L’équation de régression permet d’isoler la toxicité ou l’efficience de chaque euro engagé :
+
+| Variable | Coefficient | Nature de l’impact | Diagnostic stratégique |
+|--------|-------------|-------------------|------------------------|
+| **Gross_Margin_Rate** | **+2 671,72** | Crucial | Levier principal de rentabilité via le prix et le mix produit. |
+| **Sales** | +0,3813 | Modéré | Chaque euro de CA ne génère que 0,38 € d’EBITDA net. |
+| **Cost_IT** | -0,8970 | Efficient | Investissement utile, coût support nécessaire. |
+| **Cost_Admin** | -0,9888 | Neutre | Structure de coût fixe standard. |
+| **Cost_Marketing** | -0,9941 | Inefficient | Le marketing détruit plus d’EBITDA qu’il n’en génère directement. |
+| **Cost_Sales** | **-1,0406** | Toxique | Sureffectif ou inefficacité structurelle de la force de vente. |
+| **Cost_Rent** | **-1,0546** | Toxique | Loyer surévalué par rapport à la capacité de génération de cash. |
+
+## 🧠 Enseignements Stratégiques
+- Priorisation des coupes : Les départements dont le coefficient est supérieur à $|1,0|$ (**Rent** et **Sales Force**) sont les cibles prioritaires.
+  Chaque euro économisé dans ces pôles améliore l’EBITDA de **plus d’un euro**, traduisant un fort effet de levier sur les coûts fixes.
+
+- Seuil d’efficience IT : 1vec un coefficient de **-0,90**, l’IT est le département le plus efficient en coût support.  
+  Une réduction budgétaire aurait un impact négatif disproportionné sur l’EBITDA.
+
+- Faiblesse du levier CA : Le coefficient des ventes (**0,38**) confirme que la croissance du chiffre d’affaires seule ne permet pas de redresser la structure sans une révision profonde de la base de coûts.
+
+## ➡️ Prochaine étape
+👉 **Simulation de Redressement Ciblé**
+- Activation des leviers sur les pôles à forte toxicité.
+- Projection de l’EBITDA cible post-optimisation.
+- Recalcul du point mort et évaluation de la viabilité long terme.
 
 
