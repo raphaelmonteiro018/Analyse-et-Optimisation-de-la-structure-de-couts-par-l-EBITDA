@@ -72,13 +72,13 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 
 | Variable | Coefficient (β) | Impact Monétaire Réel | Diagnostic stratégique |
 |---|---|---|---|
-| Gross_Margin_Rate | +2 671,72 | +26,72 € / +1 pt de marge | ⚙️ **Levier de précision** : Crucial pour la santé à long terme, mais impact unitaire faible. |
-| Sales | +0,3813 | +381,30 € / +1000 € de CA | 🚀 **Moteur de cash-flow** : Le levier le plus puissant pour couvrir les charges fixes. |
-| Cost_IT | -0,8970 | -89,70 € / 100 € coupés | ✅ **Efficient** : Coût support nécessaire ; couper ici dégrade l'opérationnel. |
-| Cost_Admin | -0,9888 | -98,88 € / 100 € coupés | ➖ **Neutre** : Structure de coût fixe standard. |
-| Cost_Marketing | -0,9941 | +99,41 € / 100 € sauvés | ⚠️ **Inefficient** : Le marketing ne s'autofinance pas dans la structure actuelle. |
-| Cost_Sales | -1,0406 | +104,06 € / 100 € sauvés | 🔴 **Toxique** : Inefficience de la force de vente (levier inversé). |
-| Cost_Rent | -1,0546 | +105,46 € / 100 € sauvés | 🔴 **Toxique** : Loyer surévalué par rapport à la capacité de génération de cash. |
+| Gross_Margin_Rate | +2 671,72 | +1 pt de marge = +26,72 € d'EBITDA | ⚙️ **Levier de précision** : Crucial pour la santé à long terme, mais impact faible avec les volumes actuels. |
+| Sales | +0,3813 | +1000 € de CA = +381,30 € d'EBITDA | 🚀 **Moteur de cash-flow** : Le levier le plus puissant pour couvrir les charges fixes. |
+| Cost_IT | -0,8970 | 100 € coupés sur ce poste = +89,70 € d'EBITDA | ✅ **Efficient** : Coût support nécessaire, couper ici dégrade l'opérationnel. |
+| Cost_Admin | -0,9888 | 100 € coupés sur ce poste = +98,88 € d'EBITDA | ➖ **Neutre** : Structure de coût fixe standard. |
+| Cost_Marketing | -0,9941 | 100 € coupés sur ce poste = +99,41 € d'EBITDA | ⚠️ **Inefficient** : Le marketing ne s'autofinance pas dans la structure actuelle, cet investissement censé booster les ventes n'est que très peu rentable. |
+| Cost_Sales | -1,0406 | 100 € coupés sur ce poste = +104,06 € d'EBITDA | 🔴 **Toxique** : Inefficience de la force de vente (levier inversé). |
+| Cost_Rent | -1,0546 | 100 € coupés sur ce poste = +105,46 € d'EBITDA | 🔴 **Toxique** : Loyer surévalué par rapport à la capacité de génération de cash. |
 
 ## 💡 Interprétation des leviers de performance
 
@@ -86,7 +86,7 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 Le coefficient de +2 671,72 indique une sensibilité extrême du modèle au pricing. Cependant, l'impact monétaire reste chirurgical : une amélioration de 1 point de pourcentage (ex: passage de 38% à 39%) ne génère que **26,72 € d'EBITDA hebdomadaire** supplémentaire. Ce levier est nécessaire mais insuffisant pour combler seul un déficit de 1 500 €.
 
 **✂️ Priorisation des coupes budgétaires**
-Les départements dont le coefficient est supérieur à `|1,0|` (**Rent** et **Sales Force**) sont les cibles prioritaires. Chaque euro économisé dans ces pôles améliore l'EBITDA de plus d'un euro, traduisant un fort effet de levier sur la réduction des pertes.
+Les départements dont le coefficient est supérieur à |1,0| (Rent et Sales Force) sont les cibles prioritaires du plan de redressement. Chaque euro économisé dans ces pôles améliore l'EBITDA de plus d'un euro, ce qui traduit mathématiquement l'élimination d'inefficiences structurelles, comme une surcapacité immobilière ou une sous-productivité commerciale.
 
 **💻 Seuil d'efficience IT**
 Avec un coefficient de -0,90, l'IT est le département le plus "rentable" en termes de support. Une réduction budgétaire aurait un impact négatif disproportionné sur la capacité opérationnelle pour un gain financier marginal.
