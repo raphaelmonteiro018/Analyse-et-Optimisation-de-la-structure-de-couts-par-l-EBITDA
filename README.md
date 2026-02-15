@@ -45,4 +45,4 @@ Pour sauver les Business Units, la recommandation stratégique doit pivoter vers
 
 Pour combler les ~900 € manquants, il est impératif de générer environ **2 400 € de ventes supplémentaires par semaine** ($900 / 0,38$).
 
-> **Verdict** : Le redressement ne passera pas uniquement par les économies, mais par la **reconquête commerciale** et l'atteinte de la **taille critique**.
+> **Verdict** : Le redressement ne passera pas uniquement par les économies, mais par une stratégie de reconquête commerciale.
