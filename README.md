@@ -70,22 +70,29 @@ Une analyse de corrélation a été réalisée pour valider la sélection des va
 ## 🔍 Analyse des coefficients ($\beta$)
 L’équation de régression permet d’isoler la toxicité ou l’efficience de chaque euro engagé :
 
-| Variable | Coefficient | Nature de l’impact | Diagnostic stratégique |
-|--------|-------------|-------------------|------------------------|
-| **Gross_Margin_Rate** | **+2 671,72** | Crucial | Levier principal de rentabilité via le prix et le mix produit. |
-| **Sales** | +0,3813 | Modéré | Chaque euro de CA ne génère que 0,38 € d’EBITDA net. |
-| **Cost_IT** | -0,8970 | Efficient | Investissement utile, coût support nécessaire. |
-| **Cost_Admin** | -0,9888 | Neutre | Structure de coût fixe standard. |
-| **Cost_Marketing** | -0,9941 | Inefficient | Le marketing détruit plus d’EBITDA qu’il n’en génère directement. |
-| **Cost_Sales** | **-1,0406** | Toxique | Sureffectif ou inefficacité structurelle de la force de vente. |
-| **Cost_Rent** | **-1,0546** | Toxique | Loyer surévalué par rapport à la capacité de génération de cash. |
+| Variable | Coefficient (β) | Impact Monétaire Réel | Diagnostic stratégique |
+|---|---|---|---|
+| Gross_Margin_Rate | +2 671,72 | +26,72 € / +1 pt de marge | ⚙️ **Levier de précision** : Crucial pour la santé à long terme, mais impact unitaire faible. |
+| Sales | +0,3813 | +381,30 € / +1000 € de CA | 🚀 **Moteur de cash-flow** : Le levier le plus puissant pour couvrir les charges fixes. |
+| Cost_IT | -0,8970 | -89,70 € / 100 € coupés | ✅ **Efficient** : Coût support nécessaire ; couper ici dégrade l'opérationnel. |
+| Cost_Admin | -0,9888 | -98,88 € / 100 € coupés | ➖ **Neutre** : Structure de coût fixe standard. |
+| Cost_Marketing | -0,9941 | +99,41 € / 100 € sauvés | ⚠️ **Inefficient** : Le marketing ne s'autofinance pas dans la structure actuelle. |
+| Cost_Sales | -1,0406 | +104,06 € / 100 € sauvés | 🔴 **Toxique** : Inefficience de la force de vente (levier inversé). |
+| Cost_Rent | -1,0546 | +105,46 € / 100 € sauvés | 🔴 **Toxique** : Loyer surévalué par rapport à la capacité de génération de cash. |
 
-- Levier massif (gross margin) : Une amélioration de 1 % du taux de marge brute génère un impact positif sur l'EBITDA de +2 671,72€ confirmant que la rentabilité se joue sur le pricing et les coûts d'achat plutôt que sur la seule croissance du volume de ventes.
-- Priorisation des coupes : Les départements dont le coefficient est supérieur à $|1,0|$ (**Rent** et **Sales Force**) sont les cibles prioritaires.
-  Chaque euro économisé dans ces pôles améliore l’EBITDA de **plus d’un euro**, traduisant un fort effet de levier sur les coûts fixes.
-- Seuil d’efficience IT : Avec un coefficient de **-0,90**, l’IT est le département le plus efficient en coût support.  
-  Une réduction budgétaire aurait un impact négatif disproportionné sur l’EBITDA.
-- Faiblesse du levier CA : Le coefficient des ventes (**0,38**) confirme que la croissance du chiffre d’affaires seule ne permet pas de redresser la structure sans une révision profonde de la base de coûts.
+## 💡 Interprétation des leviers de performance
+
+**📐 Sensibilité au Taux de Marge**
+Le coefficient de +2 671,72 indique une sensibilité extrême du modèle au pricing. Cependant, l'impact monétaire reste chirurgical : une amélioration de 1 point de pourcentage (ex: passage de 38% à 39%) ne génère que **26,72 € d'EBITDA hebdomadaire** supplémentaire. Ce levier est nécessaire mais insuffisant pour combler seul un déficit de 1 500 €.
+
+**✂️ Priorisation des coupes budgétaires**
+Les départements dont le coefficient est supérieur à `|1,0|` (**Rent** et **Sales Force**) sont les cibles prioritaires. Chaque euro économisé dans ces pôles améliore l'EBITDA de plus d'un euro, traduisant un fort effet de levier sur la réduction des pertes.
+
+**💻 Seuil d'efficience IT**
+Avec un coefficient de -0,90, l'IT est le département le plus "rentable" en termes de support. Une réduction budgétaire aurait un impact négatif disproportionné sur la capacité opérationnelle pour un gain financier marginal.
+
+**🚀 Puissance du levier CA**
+Contrairement aux idées reçues, le coefficient des ventes (0,38) est le moteur de redressement le plus massif. Générer **5 000 € de chiffre d'affaires supplémentaire** rapporte **1 905 € d'EBITDA**, soit bien plus que n'importe quelle coupe budgétaire réaliste.
 
 ### 🛡️ Validation de la robustesse du modèle
 <img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
@@ -94,22 +101,28 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 
 ## 💡 Déploiement de la stratégie de redressement
 
-### 1️⃣ Levier prioritaire : restauration de la marge
-- Domination du taux de marge : Le coefficient de **+2 671,72** associé au *Gross_Margin_Rate* écrase l’ensemble des autres leviers de performance.
-  Impact massif : Une amélioration de seulement **+0,5 point de marge brute** génère autant d’EBITDA que la **suppression totale du budget marketing** (données hebdomadaires).
+### 1️⃣ Levier de précision : Restauration de la marge
 
-Des axes de redressement pourraient passer par :
-- une **renégociation agressive des coûts d’achat**.
-- une **optimisation du mix produit / pricing**.
+Le coefficient de +2 671,72 associé au `Gross_Margin_Rate` confirme que la rentabilité se joue sur le **pricing et les coûts d'achat**. Néanmoins, avec un gain de seulement +13,36 € pour 0,5 point de marge, ce levier doit être couplé à une stratégie de volume.
 
-Point important : Une entreprise avec un déficit chronique de l'EBITDA tend à avoir épuisé un certain nombre de marges de manoeuvres, de plus, une modification du mix produit / pricing peut etre longue et risquée à réalisée.
+Les axes retenus sont :
+- 🔄 **Renégociation agressive des coûts d'achat** (Sourcing)
+- 🎯 **Optimisation du mix produit** pour favoriser les références à forte contribution
 
-### 2️⃣ Assainissement de la structure
-- Élimination des couts superflus : Les postes loyer (*Cost_Rent*) et force de vente (*Cost_Sales*) sont classés comme toxiques, avec des coefficients respectifs de **-1,05** et **-1,04**. Cela signifie que chaque euro supplémentaire dépensé sur ces postes pèse légèrement plus que ce qu'il ne rapporte sur l'EBITDA (inefficience du capital).
-- Effet de levier inversé : Inversement, chaque euro économisé sur ces postes surévalués ou inefficaces **augmente l’EBITDA de plus d’un euro**, traduisant un levier puissant sur les coûts fixes.
-- Préservation de l’IT : Avec un coefficient de **-0,89**, l’IT apparaît comme le **coût support le plus efficient**. Toute coupe budgétaire sur ce périmètre serait contre-productive et dégraderait l'EBITDA en plus de la capacité opérationnelle.
+---
 
-### 3️⃣ Le mythe de la croissance organique
-- Faiblesse du levier chiffre d’affaires : Le coefficient des ventes (**+0,38**) constitue un **signal d’alerte majeur**. Dans la structure actuelle, injecter de la croissance sans refondre la base de coûts revient à remplir un seau percé car 62 % de chaque euro de chiffre d’affaires supplémentaire est immédiatement absorbé par l’inefficience du modèle.
+### 2️⃣ Assainissement de la structure (Levier > 1.0)
+
+Les postes **Loyer** (`Cost_Rent`) et **Force de vente** (`Cost_Sales`) sont classés comme 🔴 toxiques. Cela signifie que la structure est actuellement **surdimensionnée** pour le volume d'activité traité.
+
+> ⚠️ **Effet de levier inversé** : Chaque euro économisé sur ces postes augmente l'EBITDA de plus d'un euro. Le plan de redressement devra impérativement passer par une **réduction de la voilure immobilière** et une **restructuration commerciale**.
+
+---
+
+### 3️⃣ Levier de puissance : La croissance de volume
+
+Le diagnostic est sans appel : l'entreprise souffre d'un **manque de taille critique**. Le coefficient `Sales` de 0,38 démontre que le modèle opérationnel est **sain mais étouffé** par les charges fixes.
+
+Pour atteindre le point mort, la priorité absolue est d'augmenter le **volume d'affaires** afin d'amortir les coûts fixes restants. Injecter de la croissance après avoir assaini la base de coûts est la **seule voie vers un EBITDA positif durable**.
 
 ## ➡️ Prochaine étape : simulation du plan de redressement
