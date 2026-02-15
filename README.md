@@ -2,16 +2,16 @@
 Ce projet vise à diagnostiquer la viabilité financière d'un réseau de business units en difficulté chronique. L'objectif est de transformer des données comptables brutes en un moteur de décision capable d'identifier les centres de coûts toxiques et de simuler une trajectoire de redressement vers l'équilibre (EBITDA).
 
 ## 🎯 Objectifs
-- Isoler les leviers de perte : Identifier mathématiquement quels départements (loyer, marketing, RH, etc.) détruisent la rentabilité opérationnelle.
+- Isoler les leviers de perte : Identifier mathématiquement quels départements (loyer, marketing, RH, etc.) détruisent la rentabilité.
 - Réduire le risque de faillite : Simuler une restructuration chirurgicale pour abaisser le point mort financier sans stopper l'activité.
-- Auditer la structure de coûts : Proposer une méthodologie économétrique (Régression OLS) permettant de justifier chaque coupe budgétaire par son impact réel sur l'EBITDA.
+- Stress-test du business model : Utiliser la simulation What-if pour tester si le redressement est possible par les coûts ou s'il nécessite un pivot stratégique vers le volume.
 - Industrialiser le reporting : Automatiser le flux de données entre l'extraction P&L, l'analyse Python et la génération de feuilles de route opérationnelles sous Excel.
 
 ## 🚀 Résultats
-- Restauration de la rentabilité : Passage d'un déficit chronique (-1 487 €) à un profit opérationnel moyen de +413 € par semaine, validant la survie du réseau.
+- Diagnostic de survie : Mise en évidence que le plan d'austérité seul (coupes de -25% sur les postes critiques) est insuffisant pour atteindre le point mort, réduisant le déficit de seulement 40%.
 - Fiabilité du modèle : 98.2% ($R^2$). La variation de l'EBITDA est expliquée quasi intégralement, garantissant des simulations de redressement mathématiquement robustes.
-- Identification des leviers toxiques : Mise en évidence d'un effet de levier inversé sur le loyer et la force de vente (coefficients $> |1.0|$), justifiant des coupes drastiques de -25%.
-- Pivot vers la valeur : Démonstration qu'un gain de +0.5pt de marge brute via le sourcing est 2,5x plus puissant que la seule réduction des coûts fixes.
+- Identification des leviers toxiques : Mise en évidence d'un effet de levier inversé sur le loyer et la force de vente (coefficients $> |1.0|$), confirmant une structure de coûts surdimensionnée par rapport au volume actuel.
+- Pivot vers la croissance : Démonstration que le salut de l'entreprise repose sur un choc de volume, il manque ~2 400 € de CA hebdomadaire par branche pour absorber les charges fixes restantes.
 
 ## 🔁 Workflow
 1. ETL & Préparation : Consolidation des flux P&L et transformation des données pour créer un dataset exploitable par branche et par semaine.
