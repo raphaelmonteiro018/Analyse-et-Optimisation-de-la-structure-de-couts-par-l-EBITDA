@@ -65,8 +65,6 @@ Une analyse de corrélation a été réalisée pour valider la sélection des va
 ## 📊 Performance du modèle
 - Coefficient de détermination ($R^2$) : 0,982  
   Le modèle explique **98,2 % des variations de l’EBITDA**, garantissant une fiabilité extrême pour les simulations de redressement.
-- Significativité globale (Prob F-stat) : $1,44 \times 10^{-321}$  
-  La probabilité que les relations observées soient dues au hasard est quasi nulle.
 - Indice de confiance : Toutes les variables présentent une **P-value ≈ 0,000**, confirmant leur pertinence statistique individuelle.
 
 ## 🔍 Analyse des coefficients ($\beta$)
