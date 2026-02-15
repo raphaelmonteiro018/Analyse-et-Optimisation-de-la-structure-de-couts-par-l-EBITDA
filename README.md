@@ -26,9 +26,7 @@ L'application de ces mesures montre un redressement significatif, mais **insuffi
 | North-01 | -1 637 € | +606 € | -1 031 € | 🔴 Déficitaire |
 | South-01 | -1 334 € | +565 € | -769 € | 🔴 Déficitaire |
 | West-01 | -1 454 € | +584 € | -869 € | 🔴 Déficitaire |
-
 ---
-
 ### 🧠 Diagnostic
 
 Cette simulation est capitale car elle démontre mathématiquement que **l'austérité seule est une impasse** :
