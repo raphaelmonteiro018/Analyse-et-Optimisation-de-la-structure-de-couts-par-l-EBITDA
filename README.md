@@ -81,18 +81,10 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 | Cost_Rent | -1,0546 | 100 € coupés sur ce poste = +105,46 € d'EBITDA | 🔴 **Toxique** : Loyer surévalué par rapport à la capacité de génération de cash. |
 
 ## 💡 Interprétation des leviers de performance
-
-**📐 Sensibilité au Taux de Marge**
-Le coefficient de +2 671,72 indique une sensibilité extrême du modèle au pricing. Cependant, l'impact monétaire reste chirurgical : une amélioration de 1 point de pourcentage (ex: passage de 38% à 39%) ne génère que **26,72 € d'EBITDA hebdomadaire** supplémentaire. Ce levier est nécessaire mais insuffisant pour combler seul un déficit de 1 500 €.
-
-**✂️ Priorisation des coupes budgétaires**
-Les départements dont le coefficient est supérieur à |1,0| (Rent et Sales Force) sont les cibles prioritaires du plan de redressement. Chaque euro économisé dans ces pôles améliore l'EBITDA de plus d'un euro, ce qui traduit mathématiquement l'élimination d'inefficiences structurelles, comme une surcapacité immobilière ou une sous-productivité commerciale.
-
-**💻 Seuil d'efficience IT**
-Avec un coefficient de -0,90, l'IT est le département le plus "rentable" en termes de support. Une réduction budgétaire aurait un impact négatif disproportionné sur la capacité opérationnelle pour un gain financier marginal.
-
-**🚀 Puissance du levier CA**
-Contrairement aux idées reçues, le coefficient des ventes (0,38) est le moteur de redressement le plus massif. Générer **5 000 € de chiffre d'affaires supplémentaire** rapporte **1 905 € d'EBITDA**, soit bien plus que n'importe quelle coupe budgétaire réaliste.
+- Sensibilité au Taux de Marge : Le coefficient de +2 671,72 indique une sensibilité extrême du modèle au pricing. Cependant, l'impact monétaire reste chirurgical : une amélioration de 1 point de pourcentage (ex: passage de 38% à 39%) ne génère que **26,72 € d'EBITDA hebdomadaire** supplémentaire. Ce levier est nécessaire mais insuffisant pour combler seul un déficit de 1 500 €.
+- Priorisation des coupes budgétaires : Les départements dont le coefficient est supérieur à |1,0| (Rent et Sales Force) sont les cibles prioritaires du plan de redressement. Chaque euro économisé dans ces pôles améliore l'EBITDA de plus d'un euro, ce qui traduit mathématiquement l'élimination d'inefficiences structurelles, comme une surcapacité immobilière ou une sous-productivité commerciale.
+- Seuil d'efficience IT : Avec un coefficient de -0,90, l'IT est le département le plus "rentable" en termes de support. Une réduction budgétaire aurait un impact négatif disproportionné sur la capacité opérationnelle pour un gain financier marginal.
+- Puissance du levier CA : Le coefficient des ventes (0,38) est le moteur de redressement le plus massif. Générer **5 000 € de chiffre d'affaires supplémentaire** rapporte **1 905 € d'EBITDA**, soit bien plus que n'importe quelle coupe budgétaire réaliste.
 
 ### 🛡️ Validation de la robustesse du modèle
 <img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
