@@ -28,5 +28,5 @@ Ce projet vise à diagnostiquer la viabilité financière d'un réseau de busine
 - Etape 2 : Choix des leviers & Simulation du redressement
 
 ## Navigation
-Pour naviguer entre les différentes étapes du processus, veuillez sélectionner les scripts dans l'ordre suivant :
+Pour naviguer entre les différentes étapes du processus, veuillez sélectionner les branches dans l'ordre suivant :
 <img width="1852" height="542" alt="image" src="https://github.com/user-attachments/assets/4caed3ab-4151-4916-a118-1ca66b3adceb" />
