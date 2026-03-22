@@ -87,7 +87,7 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 ### 🛡️ Validation de la robustesse du modèle face au bruit
 <img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
 
-- La distribution des résidus suit une loi normale centrée sur zéro, confirmant la neutralité statistique du modèle et la fiabilité des coefficients utilisés pour le pilotage du plan de redressement.
+La distribution des résidus est approximativement normale et centrée sur zéro (validation visuelle par histogramme et courbe de densité), confirmant l'absence de biais systématique du modèle.
 
 ## 💡 Déploiement de la stratégie de redressement
 
