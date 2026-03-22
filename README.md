@@ -5,7 +5,7 @@ Ce projet vise à diagnostiquer la viabilité financière d'un réseau de 4 busi
 - Isoler les leviers de perte : Identifier mathématiquement quels départements (loyer, marketing, RH, etc.) détruisent la rentabilité.
 - Réduire le risque de faillite : Simuler une restructuration chirurgicale pour abaisser le point mort financier sans stopper l'activité.
 - Stress-test du business model : Utiliser la simulation What-if pour tester si le redressement est possible par les coûts ou s'il nécessite un pivot stratégique vers le volume.
-- Industrialiser le reporting : Automatiser le flux de données entre l'extraction P&L, l'analyse Python et la génération de feuilles de route opérationnelles sous Excel.
+- Fiabiliser le reporting : Automatiser le flux de données entre l'extraction P&L, l'analyse Python et la génération de feuilles de route opérationnelles sous Excel.
 
 ## 🚀 Résultats
 - Diagnostic de survie : Mise en évidence que le plan d'austérité seul (coupes de -25% sur les postes critiques) est insuffisant pour atteindre le point mort, réduisant le déficit de seulement 40%.
