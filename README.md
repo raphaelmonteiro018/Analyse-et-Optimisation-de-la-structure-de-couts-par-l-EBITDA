@@ -50,15 +50,15 @@ Période étudiée : **Historique consolidé (2024-2025)**
 - Poids de l'immobilier : Le loyer moyen représente une charge fixe disproportionnée, avec un pic critique à **716,85 €** sur la branche North-01 (voir graphique de structure des OPEX).
 - Inefficience commerciale : La force de vente est le premier poste de dépense global, mais sa corrélation avec la croissance de l'EBITDA semble s'essouffler (rendements décroissants).
 
-## ⚖️ Modélisation Économétrique
+## ⚖️ Modélisation
 Une analyse de corrélation a été réalisée pour valider la sélection des variables et identifier les moteurs de perte, puis, une régression linéaire multiple par la méthode des moindres carrés ordinaires (OLS) a été déployée afin de quantifier l’impact marginal de chaque poste de dépense sur l’EBITDA.
 
 ## 🔍 Analyse des corrélations
 <img width="945" height="793" alt="image" src="https://github.com/user-attachments/assets/998619eb-c479-4f14-a884-0ee822f0a793" />
 
-- On observe une corrélation positive très forte de 0,8922 entre le volume de ventes et l'EBITDA. Cela confirme que le modèle est sensible au volume, mais que la structure de coûts actuelle étouffe ce levier.
+- On observe une corrélation positive très forte (0,8922) entre le volume de ventes et l'EBITDA. Cela confirme que le modèle est sensible au volume, mais que la structure de coûts actuelle étouffe ce levier.
 - La matrice confirme que certains coûts, bien que nécessaires, ont un impact négatif marqué sur l'EBITDA lorsqu'ils ne sont pas optimisés.
-- Les faibles corrélations croisées entre les différents postes de dépenses (souvent proches de 0) permettent d'éviter le biais de multicolinéarité, garantissant la fiabilité des coefficients de la régression OLS.
+- Les faibles corrélations croisées entre les différents postes de dépenses (souvent proches de 0) permettent d'éviter le biais de multicolinéarité, garantissant la fiabilité des coefficients de la régression.
 
 ## 📊 Performance du modèle
 - Coefficient de détermination ($R^2$) : 0,982  
@@ -79,12 +79,12 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 | Cost_Rent | -1,0546 | 100 € coupés sur ce poste = +105,46 € d'EBITDA | 🔴 **Toxique** : Loyer surévalué par rapport à la capacité de génération de cash. |
 
 ## 💡 Interprétation des leviers de performance
-- Sensibilité au Taux de Marge : Le coefficient de +2 671,72 indique une sensibilité extrême du modèle au pricing. Cependant, l'impact monétaire reste chirurgical, une amélioration de 1 point de pourcentage de la marge ne génère actuellement que **26,72 € d'EBITDA hebdomadaire** supplémentaire. Ce levier est nécessaire mais insuffisant pour combler seul un déficit de 1 500 €.
+- Sensibilité au Taux de Marge : Le coefficient de +2 671,72 indique une sensibilité du modèle au pricing. Cependant, l'impact monétaire reste chirurgical, une amélioration de 1 point de pourcentage sur la marge ne génère actuellement que **26,72 € d'EBITDA hebdomadaire** supplémentaire. Ce levier est nécessaire mais insuffisant pour combler seul un déficit de 1 500 €.
 - Priorisation des coupes budgétaires : Les départements dont le coefficient est supérieur à |1,0| (Rent et Sales Force) sont les cibles prioritaires du plan de redressement. Chaque euro économisé dans ces pôles améliore l'EBITDA de plus d'un euro, ce qui traduit mathématiquement l'élimination d'inefficiences structurelles, comme une surcapacité immobilière ou une sous-productivité commerciale.
 - Seuil d'efficience IT : Avec un coefficient de -0,90, l'IT est le département le plus "rentable" en termes de support. Une réduction budgétaire aurait un impact négatif disproportionné sur la capacité opérationnelle pour un gain financier marginal.
 - Puissance du levier CA : Le coefficient des ventes (0,38) est le moteur de redressement le plus massif. Générer **5 000 € de chiffre d'affaires supplémentaire** rapporte **1 905 € d'EBITDA**, soit bien plus que n'importe quelle coupe budgétaire réaliste.
 
-### 🛡️ Validation de la robustesse du modèle
+### 🛡️ Validation de la robustesse du modèle face au bruit
 <img width="802" height="480" alt="image" src="https://github.com/user-attachments/assets/934318c8-873c-4135-ae12-be95b804e089" />
 
 - La distribution des résidus suit une loi normale centrée sur zéro, confirmant la neutralité statistique du modèle et la fiabilité des coefficients utilisés pour le pilotage du plan de redressement.
@@ -96,8 +96,8 @@ L’équation de régression permet d’isoler la toxicité ou l’efficience de
 Le coefficient de +2 671,72 associé au `Gross_Margin_Rate` confirme que la rentabilité se joue sur le **pricing et les coûts d'achat**. Néanmoins, avec un gain de seulement 26,72 € d'EBITDA hebdomadaire pour 1 point de marge supplémentaire, ce levier doit être couplé à une stratégie de volume actuellement inexistante.
 
 Les axes retenus sont :
-- 🔄 **Renégociation agressive des coûts d'achat** (Sourcing)
-- 🎯 **Optimisation du mix produit** pour favoriser les références à forte contribution
+- 🔄 Renégociation des coûts d'achat (Sourcing)
+- 🎯 Optimisation du mix produit pour favoriser les références à forte contribution
 
 ---
 
@@ -111,8 +111,8 @@ Les postes **Loyer** (`Cost_Rent`) et **Force de vente** (`Cost_Sales`) sont cla
 
 ### 3️⃣ Levier de puissance : La croissance de volume
 
-Le diagnostic est sans appel : l'entreprise souffre d'un **manque de taille critique**. Le coefficient `Sales` de 0,38 démontre que le modèle opérationnel est **sain mais étouffé** par les charges fixes.
+Le diagnostic est sans appel : l'entreprise souffre d'un manque de taille. Le coefficient `Sales` de 0,38 démontre que le modèle opérationnel est sain mais étouffé par les charges fixes.
 
-Pour atteindre le point mort, la priorité absolue est d'augmenter le **volume d'affaires** afin d'amortir les coûts fixes restants. Injecter de la croissance après avoir assaini la base de coûts est la **seule voie vers un EBITDA positif durable**.
+Pour atteindre le point mort, la priorité absolue reste d'augmenter le volume des ventes afin d'amortir les coûts fixes restants. Injecter de la croissance après avoir assaini la base de coûts est la voie principale vers un EBITDA positif durable.
 
 ## ➡️ Prochaine étape : simulation du plan de redressement
