@@ -35,7 +35,7 @@ Cette simulation est capitale car elle démontre mathématiquement que **l'aust�
 
 **L'insuffisance du levier de marge brute** : Bien que le coefficient soit élevé (2 671), une hausse de 0,5 pt de marge est une goutte d'eau (+13 €) face à l'ampleur du déficit hebdomadaire.
 
-**La variable manquante : le Volume (`Sales`)** : Le modèle confirme que sans un choc massif de croissance du Chiffre d'Affaires (coefficient +0,38), la rentabilité est inatteignable.
+**L'importance du volume (`Sales`)** : La croissance du chiffre d'affaires (coefficient +0,38) est évidemment le levier principal à solliciter au-delà des coupes budgétaires.
 
 ---
 
