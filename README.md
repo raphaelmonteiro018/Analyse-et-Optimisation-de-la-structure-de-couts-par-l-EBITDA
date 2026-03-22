@@ -5,26 +5,24 @@
 - Récupérer et fiabiliser les données issues du P&L consolidé.
 - Identifier les moteurs de la perte opérationnelle (EBITDA négatif).
 - Vérifier l’existence de leviers d’optimisation par département.
-- Éviter toute coupe budgétaire arbitraire avant la phase de modélisation économétrique.
+- Éviter toute coupe budgétaire arbitraire avant la phase de modélisation.
 
 ## 🔗 Sources des données
 Les données proviennent d'un dataset fictif récupéré pour l'exercice :
 - P&L opérationnel : Détail des revenus et charges par business Unit (East, North, South, West).
 - Référentiel coûts : Ventilation par poste de dépense (marketing, RH, IT, loyer, admin, force de vente).
-- Temporalité des données : Historique journalier pour les ventes et mensuel pour les budgets par région/poste de dépense.
+- Temporalité des données : L'historique est journalier pour les ventes, et mensuel pour les budgets.
 
 ## 🗓️ Harmonisation & Préparation
-Afin d’assurer une comparabilité parfaite entre les différentes Business Units :
 - Alignement calendaire : Toutes les données sont agrégées sur une base hebdomadaire stable.
-- Pivotage des données (ETL) : Transformation du format transactionnel (lignes de coûts) en format analytique (colonnes par département) via un pipeline Python.
-- Normalisation des métriques : Calcul systématique du taux de marge brute et de l'EBITDA normalisé pour éliminer les effets de périmètre.
+- Calcul des indicateurs de rentabilité clés (taux de marge brute, point mort, EBITDA) sur base hebdomadaire par business unit.
 
 ## ⚙️ Ingénierie des données & Variable cible (Y)
-- Variable cible (Y) : L'EBITDA hebdomadaire est retenu comme l'indicateur maître de la performance.
+- Variable cible (Y) : L'EBITDA hebdomadaire est retenu comme le KPI clef.
 - Indicateur de survie (point mort) : Calcul du seuil de rentabilité théorique pour chaque branche afin de mesurer l'écart à la rentabilité.
 
 ## 🏗️ Diagnostic de la structure de coûts
-L'analyse porte sur 6 centres de coûts principaux. L'enjeu est de distinguer les coûts efficients des coûts toxiques.
+L'analyse porte sur 6 centres de coûts. L'enjeu est de distinguer les coûts efficients des coûts toxiques.
 - Coûts fixes critiques : Loyer et administration.
 - Coûts variables d'acquisition : Marketing et force de vente.
 - Supports opérationnels : IT et ressources humaines.
@@ -64,8 +62,8 @@ Une analyse de corrélation a été réalisée pour valider la sélection des va
 
 ## 📊 Performance du modèle
 - Coefficient de détermination ($R^2$) : 0,982  
-  Le modèle explique **98,2 % des variations de l’EBITDA**, garantissant une fiabilité extrême pour les simulations de redressement.
-- Indice de confiance : Toutes les variables présentent une **P-value ≈ 0,000**, confirmant leur pertinence statistique individuelle.
+  Le modèle explique **98,2 % des variations de l’EBITDA**, garantissant la fiabilité des simulations de redressement.
+- Indice de confiance : Toutes les variables présentent des **P-value ≈ 0,000**, confirmant leur pertinence statistique individuelle (significativité).
 
 ## 🔍 Analyse des coefficients ($\beta$)
 L’équation de régression permet d’isoler la toxicité ou l’efficience de chaque euro engagé :
