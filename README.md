@@ -1,5 +1,5 @@
 ## 🏢 Contexte
-Ce projet vise à diagnostiquer la viabilité financière d'un réseau de business units en difficulté chronique. L'objectif est de transformer des données comptables brutes en un moteur de décision capable d'identifier les centres de coûts toxiques et de simuler une trajectoire de redressement vers l'équilibre (EBITDA).
+Ce projet vise à diagnostiquer la viabilité financière d'un réseau de 4 business units en difficulté chronique. L'objectif est de transformer des données comptables brutes en un moteur de décision capable d'identifier les centres de coûts toxiques, et de simuler une trajectoire de redressement vers l'équilibre (via l'EBITDA).
 
 ## 🎯 Objectifs
 - Isoler les leviers de perte : Identifier mathématiquement quels départements (loyer, marketing, RH, etc.) détruisent la rentabilité.
@@ -9,9 +9,8 @@ Ce projet vise à diagnostiquer la viabilité financière d'un réseau de busine
 
 ## 🚀 Résultats
 - Diagnostic de survie : Mise en évidence que le plan d'austérité seul (coupes de -25% sur les postes critiques) est insuffisant pour atteindre le point mort, réduisant le déficit de seulement 40%.
-- Fiabilité du modèle : 98.2% ($R^2$). La variation de l'EBITDA est expliquée quasi intégralement, garantissant des simulations de redressement mathématiquement robustes.
 - Identification des leviers toxiques : Mise en évidence d'un effet de levier inversé sur le loyer et la force de vente (coefficients $> |1.0|$), confirmant une structure de coûts surdimensionnée par rapport au volume actuel.
-- Pivot vers la croissance : Démonstration que le salut de l'entreprise repose sur un choc de volume, il manque ~2 400 € de CA hebdomadaire par branche pour absorber les charges fixes restantes.
+- Pivot vers la croissance : Démonstration que la survie de l'entreprise repose sur un choc lié au mix produit, il manque ~2 400 € de CA hebdomadaire par branche pour revenir à l'équilibre opérationnel (EBITDA = 0).
 
 ## 🔁 Workflow
 1. ETL & Préparation : Consolidation des flux P&L et transformation des données pour créer un dataset exploitable par branche et par semaine.
